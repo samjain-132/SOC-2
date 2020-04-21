@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine&display=swap"
+      href="https://fonts.googleapis.com/css?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home</title>
+  </head>
+  <body onload="myfunction()">
+    <div id="loader"></div>
+    <div class="home" id="home">
+      <div id="navbartop1">
+        <img id="logo" src="./images/Abhyuday-cheched.png" alt="logo-image" />
+        <a class="topnav" id="menu">Menu</a>
+        <a href="#contact" class="topnav">Contact Us</a>
+        <a href="#stats" class="topnav">Register</a>
+        <a href="#about" class="topnav">About</a>
+        <a href="#home" class="topnav">Home</a>
+      </div>
+      <h1 id="ab">
+        Abhyuday
+      </h1>
+      <h3 id="social">
+        <span id="dash">-</span> The Social Body of IIT Bombay
+      </h3>
+      <br /><br /><br /><br /><br /><br /><br />
+      <h4 id="move"><a href="#about"> SCROLL DOWN</a></h4>
+    </div>
+    <div class="about" id="about">
+      <br /><br /><br />
+      <h4 id="line1" data-aos="fade-up">/WHO WE ARE</h4>
+      <h1 id="line2" data-aos="fade-up">About Us</h1>
+      <p id="para1" data-aos="fade-up">
+        Abhyuday, started in 2014, with a group of socially inclined students
+        who felt the need for a body, which provides opportunities to the
+        students of the institute who wish to work for a better society. With a
+        vision to channelize the youth towards India's social challenges,
+        Abhyuday has established itself as one of the country’s largest student
+        run social body in the mere span of 4 years. Our flagship being
+        campaigns, we also conduct year long events like conferences, donation
+        drives, exhibitions and provide social fellowship, internship
+        opportunities to the students of the institute. The ‘Social Fest’
+        usually held in January is a two day extravaganza that celebrates the
+        spirit of social good.
+      </p>
+      <div class="tile-l" id="tile1" data-aos="fade-right">
+        <h2 id="tile1h">Social Fest</h2>
+        <p class="desc">
+          Abhyuday, IIT Bombay organises a social festival every year which
+          inculcates various impactful events,exhibitions, lectures, workshops
+          and competitions to instill a sense of responsibility in the youth
+          towards the society and to create awareness about basic human rights.
+        </p>
+        <a href="social fest" class="butt"><button>Read More</button></a>
+      </div>
+      <div class="tile-r" id="tile2" data-aos="fade-left"></div>
+      <div class="tile-l" id="tile3" data-aos="fade-right"></div>
+      <div class="tile-r" id="tile4" data-aos="fade-left">
+        <h2 id="tile4h">Competitions</h2>
+        <p class="desc">
+          The competitions at​ Abhyuday, IIT Bombay​ is a platform to provide a
+          sustainable solution model to the ​social problems ​by engaging with
+          the community and stakeholders.​ Competitions has ​covered about​ 25+
+          states ​and ​45+ cities ​with the participation of​ 800+ teams
+          ​including over ​2000 students ​& Professionals from around​ 1500
+          colleges ​across the nation till now​.
+        </p>
+        <a href="Competitons.html" class="butt"><button>Read More</button></a>
+      </div>
+    </div>
+    <div class="stats" id="stats">
+      <h1 class="register">Register</h1>
+      <form>
+        <label for="teamname" class="labels">Team Name</label>
+        <input type="text" name="teamname" id="teamname" /><br />
+        <label for="memb1" class="labels">Member 1</label>
+        <input type="text" name="memb1" id="memb1" /><br />
+        <label for="memb2" class="labels">Member 2</label>
+        <input type="text" name="memb2" id="memb2" /><br />
+        <label for="emailid" class="labels">E-mail ID</label>
+        <input type="email" name="emailid" id="emailid" /><br />
+        <label for="contact" class="labels">Contact Number</label>
+        <input type="number" name="contact" id="contact" /><br />
+      </form>
+      <button type="submit" id="button2" class="button2">Register</button>
+    </div>
+    <div class="contact" id="contact">
+      <h1 id="me">Contact Us</h1>
+      <h1>
+        <span id="team">TEAM</span> <br /><span id="all">STRATEGY WARS</span>
+      </h1>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 600 });
+    </script>
+    <script>
+      var preloader = document.getElementById("loader");
+      function myfunction() {
+        preloader.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

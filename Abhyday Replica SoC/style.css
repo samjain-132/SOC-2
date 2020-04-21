@@ -1,0 +1,314 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: black url(./images/preloader.svg) no-repeat center;
+  z-index: 9999;
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+.about {
+  width: 100vw;
+  height: 270vh;
+}
+.topnav {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2vh 2vw;
+  text-decoration: none;
+  font-size: 2vw;
+  position: sticky;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.topnav:hover {
+  background-color: #ddd;
+  color: black;
+}
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./images/bg\ image1.jpeg");
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: cover;
+}
+.about {
+  background-image: url("./images/background-2.png");
+  margin: 0%;
+}
+.stats {
+  width: 100vw;
+  height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./images/stats-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0;
+}
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/strategyWar.jpeg");
+  background-attachment: fixed;
+  background-repeat: round;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 0px;
+}
+#logo {
+  width: 15vw;
+}
+#ab {
+  font-size: 7vw;
+  margin-left: 14vw;
+  margin-bottom: 0px;
+  font-family: "Domine", serif;
+  font-weight: 500;
+  margin-top: 20vh;
+  margin-right: 50vw;
+}
+#dash {
+  color: violet;
+}
+#social {
+  margin-left: 14vw;
+  font-size: 3vw;
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 200;
+  color: gainsboro;
+  margin-top: 0px;
+  margin-right: 40vw;
+  margin-bottom: 20vh;
+  display: inline;
+}
+
+#move a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: white;
+  display: inline;
+  font-size: 2vw;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+}
+#line1 {
+  color: rgb(241, 11, 203);
+  margin-top: 20vh;
+  margin-left: 12vw;
+  font-size: 1.5vw;
+  font-family: "Metrophobic", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 250;
+  margin-bottom: 0px;
+  animation-name: anime1;
+  animation-duration: 3s;
+}
+#line2 {
+  color: rgb(0, 0, 0);
+  margin-left: 12vw;
+  font-size: 4vw;
+  font-family: "Domine", serif;
+  font-weight: 600;
+  margin-top: 10px;
+  animation-name: anime1;
+  animation-duration: 3s;
+}
+@keyframes anime1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#para1 {
+  color: rgb(0, 0, 0);
+  margin: 10px 12vw;
+  font-size: 1.9vw;
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 75;
+  line-height: 3vw;
+  word-wrap: break-word;
+  letter-spacing: 0.2vw;
+  word-spacing: 1vw;
+  animation-name: anime2;
+  animation-duration: 5s;
+}
+@keyframes anime2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tile-l {
+  margin-left: 12vw;
+  width: 34vw;
+  height: 60vh;
+  display: inline-block;
+  margin-top: 4vh;
+  float: left;
+}
+.tile-r {
+  margin-right: 12vw;
+  width: 34vw;
+  height: 60vh;
+  display: inline-block;
+  margin-top: 4vh;
+  float: right;
+}
+#tile1h {
+  text-align: left;
+  font-size: 4vw;
+  font-family: "Metrophobic", sans-serif;
+  font-weight: bold;
+  width: 34vw;
+}
+#tile4h {
+  text-align: left;
+  font-size: 4vw;
+  font-family: "Metrophobic", sans-serif;
+  font-weight: bold;
+  width: 34vw;
+}
+.desc {
+  font-size: 1.6vw;
+  font-weight: 100;
+  font-family: "Metrophobic", sans-serif;
+  letter-spacing: 0.25vw;
+  word-spacing: 0.4vw;
+  line-height: 4.5vh;
+  margin-top: 2vh;
+}
+#tile2 {
+  background-image: url("./images/abd1.jpg");
+  background-repeat: round;
+}
+#tile3 {
+  background-image: url("./images/abd1.jpg");
+  background-repeat: round;
+}
+.butt button {
+  width: 34vw;
+  border-color: black;
+  border-radius: 40%;
+  color: black;
+  height: 8vh;
+  font-size: 2vw;
+  color: black;
+  background-color: turquoise;
+  margin-top: 2vh;
+}
+.butt:hover {
+  transform: rotateX("180");
+}
+
+input[type="text"] {
+  width: 50vw;
+  height: 5vh;
+  font-size: 3.5vh;
+  padding: 0.2vh 1.5vw;
+  margin: 1.5vh 0 1.5vh 5vw;
+  box-sizing: border-box;
+  border: 0.5vh solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 0.2vw solid yellow;
+}
+input[type="email"] {
+  width: 50vw;
+  height: 5vh;
+  font-size: 3.5vh;
+  padding: 0.2vh 1.5vw;
+  margin: 1.5vh 0 1.5vh 5vw;
+  box-sizing: border-box;
+  border: 0.5vh solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  border: 0.2vw solid yellow;
+}
+input[type="number"] {
+  width: 50vw;
+  height: 5vh;
+  font-size: 3.5vh;
+  padding: 0.2vh 1.5vw;
+  margin: 1.5vh 0 1.5vh 5vw;
+  box-sizing: border-box;
+  border: 0.5vh solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border: 0.5vh solid yellow;
+}
+.labels {
+  color: white;
+  margin-left: 2vw;
+  font-size: 4vh;
+}
+.register {
+  font-size: 5vw;
+  font-family: "Domine", serif;
+  color: aquamarine;
+  margin: 0vh auto 4vh auto;
+}
+#button2 {
+  display: block;
+  width: 30vw;
+  margin: 4vh auto 0px auto;
+  height: 9vh;
+  background-color: cyan;
+  color: black;
+  border-radius: 45%;
+  font-size: 6vh;
+}
+
+#me {
+  font-size: 10vh;
+  font-family: "Domine", serif;
+  font-weight: bold;
+  margin: 0vh auto 0vh auto;
+  color: bisque;
+  text-align: center;
+}
+#team {
+  font-size: 4vh;
+  font-family: "Domine", serif;
+  font-weight: 200;
+  margin: 2vh 48vw 2vh 48vw;
+  color: bisque;
+}
+#all {
+  font-size: 20vh;
+  font-family: "Domine", serif;
+  font-weight: bold;
+  margin: 1vh 5vw;
+  color: gold;
+}
